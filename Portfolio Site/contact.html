@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kyla Quilos</title>
+    <link rel="shortcut icon" href="x">
+    <script src="https://kit.fontawesome.com/3c5ffc6f1a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Add logo here -->
+        <img src="http://via.placeholder.com/200x70" alt="Kyla Quilos logo">
+        <nav>
+            <ul role="menubar">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem">Home</a>
+                </li> 
+                <li role="presentation">
+                    <a href="about.html" role="menuitem">About Me</a>
+                </li> 
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem">Contact</a>
+                </li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+
+        <Address>
+            Kyla Quilos<br>
+            3641 Baylor St.<br>
+            Irvine, CA 92614<br>
+            <br>
+            Telephone #: <a href="tel:2135317567" aria-label="telephone number">(213) 531-7567</a><br>
+            Skype: <a href="skype:quilos.kyla">quilos.kyla</a><br>
+            Email: <a href="mailto:quilos.kyla@gmail.com">quilos.kyla@gmail.com</a>
+            <br>
+            <br>
+            <a href="mailto:quilos.kyla@gmail.com">Get in touch with me!</a>
+        </Address> 
+
+        <br>
+        <br>
+
+        <form action="https://formspree.io/f/xzbyddal" method="post" id="contact-form">
+            <label class="standard-label" for="contact-email">E-mail:</label>
+            <input type="email" id="contact-email" name="contact-email" placeholder="example@email.com" required><br>
+            <br>
+            <label for="contact-telephone" class="standard-label">Telephone:</label>
+            <input type="tel" id="contact-telephone" name="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="555-555-5555" required><br>
+            <br>
+            <label class="standard-label" for="message">Message:</label><br>
+            <textarea maxlength="240" id="message" name="message" required></textarea>
+            <br>
+            <br>
+            <button>Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Find me on</p>
+        <a href="x" target="_blank"><font color="red" size="25"><i class="fab fa-github"></i></font></a>
+        <a href="https://twitter.com/careerfoundry" target="_blank"><img src="img\iconfinder_social-media_twitter_1543317.svg" alt="Twitter logo" width="30" height="30"></a>
+        <a href="https://linkedin.com/in/kyla-quilos" target="_blank"><img src="img\iconfinder_social-media_linkedin_1727490.svg" alt="LinkedIn logo" width="30" height="30"></a>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+
+</body>
+
+</html>
