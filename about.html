@@ -5,7 +5,17 @@
     <meta charset="utf-8">
     <title>Kyla Quilos</title>
     <link rel="shortcut icon" href="x">
+    
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
     <script src="https://kit.fontawesome.com/3c5ffc6f1a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -13,46 +23,46 @@
         <!-- Add logo here -->
         <img src="http://via.placeholder.com/200x70" alt="Kyla Quilos logo">
         <nav>
-            <ul role="menubar">
+            <ul role="menubar" class="navigation-list">
                 <li role="presentation">
-                    <a href="index.html" role="menuitem">Home</a>
+                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
                 </li> 
                 <li role="presentation">
-                    <a href="about.html" role="menuitem">About Me</a>
+                    <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About Me</a>
                 </li> 
                 <li role="presentation">
-                    <a href="contact.html" role="menuitem">Contact</a>
+                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
                 </li> 
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>About</h1>
+        <h1>About Me</h1>
         <p>My name is Kyla Quilos. I graduated as an Electrical Engineer from University of California, Irvine. I am  currently pursuing web development through CareerFoundry!</p>
 
         <table>
             <thead>
                 <tr>
                     <td>Skills</td>
-                    <td>Years of Experience</td>
+                    <td>Experience</td>
                     <td>Level of Expertise</td>
                 </tr>
             </thead>
             
             <tbody>
                 <tr>
-                    <td>HTML</td>
+                    <td class="skills-list__item">HTML</td>
+                    <td>2 weeks</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td class="skills-list__item">CSS</td>
                     <td>1 week</td>
                     <td>Beginner</td>
                 </tr>
                 <tr>
-                    <td>CSS</td>
-                    <td>0</td>
-                    <td>Exposed</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
+                    <td class="skills-list__item">JavaScript</td>
                     <td>0</td>
                     <td>Exposed</td>
                 </tr>
@@ -64,9 +74,9 @@
 
     <footer>
         <p>Find me on</p>
-        <a href="x" target="_blank"><font color="black" size="6"><i class="fab fa-github"></i></font></a>
-        <a href="https://twitter.com/kylayouu_" target="_blank"><font color="#0096FF" size="6"><i class="fab fa-twitter-square"></i></font></a>
-        <a href="https://linkedin.com/in/kyla-quilos" target="_blank"><font color="#0F52BA" size="6"><i class="fab fa-linkedin"></i></font></a>
+        <a href="x" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/kylayouu_" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://linkedin.com/in/kyla-quilos" target="_blank"><i class="fab fa-linkedin"></i></a>
     </footer>
 
     <script src="js/tota11y.min.js"></script>

@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
-
+    
 <head>
     <meta charset="utf-8">
     <title>Kyla Quilos</title>
     <link rel="shortcut icon" href="x">
+    
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
     <script src="https://kit.fontawesome.com/3c5ffc6f1a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -13,15 +23,15 @@
         <!-- Add logo here -->
         <img src="http://via.placeholder.com/200x70" alt="Kyla Quilos logo">
         <nav>
-            <ul role="menubar">
+            <ul role="menubar" class="navigation-list">
                 <li role="presentation">
-                    <a href="index.html" role="menuitem">Home</a>
+                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
                 </li> 
                 <li role="presentation">
-                    <a href="about.html" role="menuitem">About Me</a>
+                    <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
                 </li> 
                 <li role="presentation">
-                    <a href="contact.html" role="menuitem">Contact</a>
+                    <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
                 </li> 
             </ul>
         </nav>
@@ -35,12 +45,12 @@
             3641 Baylor St.<br>
             Irvine, CA 92614<br>
             <br>
-            Telephone #: <a href="tel:2135317567" aria-label="telephone number">(213) 531-7567</a><br>
-            Skype: <a href="skype:quilos.kyla">quilos.kyla</a><br>
-            Email: <a href="mailto:quilos.kyla@gmail.com">quilos.kyla@gmail.com</a>
+            Telephone #: <a href="tel:2135317567" aria-label="telephone number" class="contact-info__item">(213) 531-7567</a><br>
+            Skype: <a href="skype:quilos.kyla" class="contact-info__item">quilos.kyla</a><br>
+            Email: <a href="mailto:quilos.kyla@gmail.com" class="contact-info__item">quilos.kyla@gmail.com</a>
             <br>
             <br>
-            <a href="mailto:quilos.kyla@gmail.com">Get in touch with me!</a>
+            <a href="mailto:quilos.kyla@gmail.com" class="contact-info__item">Get in touch with me!</a>
         </Address> 
 
         <br>
@@ -63,9 +73,9 @@
 
     <footer>
         <p>Find me on</p>
-        <a href="x" target="_blank"><font color="black" size="6"><i class="fab fa-github"></i></font></a>
-        <a href="https://twitter.com/kylayouu_" target="_blank"><font color="#0096FF" size="6"><i class="fab fa-twitter-square"></i></font></a>
-        <a href="https://linkedin.com/in/kyla-quilos" target="_blank"><font color="#0F52BA" size="6"><i class="fab fa-linkedin"></i></font></a>
+        <a href="x" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/kylayouu_" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://linkedin.com/in/kyla-quilos" target="_blank"><i class="fab fa-linkedin"></i></a>
     </footer>
 
     <script src="js/tota11y.min.js"></script>

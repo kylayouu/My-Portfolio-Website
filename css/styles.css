@@ -1,0 +1,106 @@
+body {
+	background-color: #fff7e8;
+	color: #353535;
+	font-family: 'Roboto', 'Lato', sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 1.2;
+	text-decoration: none;
+
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 300;
+}
+
+a {
+	color: #0e6097;
+	text-decoration: none;
+}
+
+a:visited {
+	/* visited link */
+	color: #0e6097;
+}
+
+a:hover, a:focus {
+	/* focus is for keyboard users vs hover is for cursors */
+	text-decoration: none;
+}
+
+a:active {
+	/* selected link */
+	color: #329cff;
+}
+
+.navigation-list__item:hover, .navigation-list__item:focus {
+	opacity: 0.7;
+}
+
+button {
+	border: none;
+	font-family: inherit;
+	/* takes the front from the outer container */
+	font-size: 14px;
+	background-color: #017699;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 8px;
+	border-radius: 15px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+button:hover, button:focus {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.navigation-list__item--active {
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.fa-github {
+	color: #000000;
+	font-size: 30px;
+}
+
+.fa-linkedin {
+	color: #0077b5;
+	font-size: 30px;
+	
+}
+
+.fa-twitter-square {
+	color: #00acee;
+	font-size: 30px;
+}
+
+.fa-linkedin:hover, .fa-linkedin:focus, .fa-twitter-square:hover, .fa-twitter-square:focus, .fa-github:hover, .fa-github:focus {
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2)
+}
+
+.contact-info__item:hover {
+	opacity: 0.7;
+}
+
+.code-link:hover {
+	opacity: 0.7;
+}
+
+thead {
+	font-weight: bold;
+	/* font-style: italic; */
+	text-align: center;
+	text-decoration: underline;
+}
+
+tbody {
+	text-align: center;
+}
+
+.skills-list__item {
+	font-style: italic;
+	font-weight: bold;
+}
