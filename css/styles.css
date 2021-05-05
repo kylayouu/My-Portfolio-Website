@@ -6,12 +6,14 @@ body {
 	font-size: 16px;
 	line-height: 1.2;
 	text-decoration: none;
+	width: 100%;
 
 }
 
 h1 {
 	font-size: 30px;
 	font-weight: 300;
+	text-align: center;
 }
 
 a {
@@ -91,7 +93,6 @@ button:hover, button:focus {
 
 thead {
 	font-weight: bold;
-	/* font-style: italic; */
 	text-align: center;
 	text-decoration: underline;
 }
@@ -103,4 +104,90 @@ tbody {
 .skills-list__item {
 	font-style: italic;
 	font-weight: bold;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.page-header {
+	display: flex;
+	width: 100%;
+	padding: 20px;
+}
+
+.page-header__item {
+	flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+	flex-grow: 1;
+	text-align: right;
+}
+
+.navigation-list li{
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.page-footer {
+	clear: both;
+	text-align: center;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	margin: 20px;
+}
+
+.grid__item {
+	background-color: #D3D3D3;
+	padding: 20px;
+}
+
+
+/* HOME PAGE */
+.profile__portrait {
+	float: left;
+	margin-right: 40px;
+	width: 250px;
+	border-radius: 50%
+}
+
+.profile {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+
+/* ABOUT ME PAGE */
+.about-me {
+	margin: 20px;
+	text-align: center;
+}
+
+.about-me__item {
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+/* CONTACT PAGE */
+.contact-page {
+	display: flex;
+	margin: 0 auto;
+	padding: 25px;
+	width: 700px;
+}
+
+.contact-page__item {
+	margin: 0 auto;
+	flex: 0 1 300px;
 }
