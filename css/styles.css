@@ -14,11 +14,13 @@ h1 {
 	font-size: 30px;
 	font-weight: 300;
 	text-align: center;
+	margin: 20px;
 }
 
 a {
 	color: #0e6097;
 	text-decoration: none;
+	transition: 0.2s opacity ease;
 }
 
 a:visited {
@@ -40,7 +42,9 @@ a:active {
 	opacity: 0.7;
 }
 
-button {
+/* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
+
+button, .button {
 	border: none;
 	font-family: inherit;
 	/* takes the front from the outer container */
@@ -51,9 +55,10 @@ button {
 	padding: 8px;
 	border-radius: 15px;
 	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	transition: 0.2s opacity;
 }
 
-button:hover, button:focus {
+button:hover, button:focus, .button:hover, .button:focus {
 	cursor: pointer;
 	opacity: 0.8;
 }
@@ -110,10 +115,15 @@ tbody {
 	box-sizing: border-box;
 }
 
+header {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	width: 100%;
+}
+
 .page-header {
 	display: flex;
 	width: 100%;
-	padding: 20px;
+	padding: 15px;
 }
 
 .page-header__item {
@@ -153,11 +163,12 @@ tbody {
 
 
 /* HOME PAGE */
+
 .profile__portrait {
 	float: left;
 	margin-right: 40px;
 	width: 250px;
-	border-radius: 50%
+	border-radius: 50%;
 }
 
 .profile {
@@ -167,19 +178,8 @@ tbody {
 }
 
 
-/* ABOUT ME PAGE */
-.about-me {
-	margin: 20px;
-	text-align: center;
-}
-
-.about-me__item {
-	text-align: center;
-	margin: 0 auto;
-}
-
-
 /* CONTACT PAGE */
+
 .contact-page {
 	display: flex;
 	margin: 0 auto;
@@ -190,4 +190,108 @@ tbody {
 .contact-page__item {
 	margin: 0 auto;
 	flex: 0 1 300px;
+}
+
+.contact-info-item {
+	display: flex;
+	flex-direction: column;
+}
+
+input, label {
+	padding: 8px;
+}
+
+textarea {
+	margin-top: 8px;
+	margin-left: 20px;
+	width: 188px;
+}
+
+/* ------- */
+
+@media all and (max-width: 500px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+	.grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media all and (max-width: 750px) {
+	.grid {
+		grid-gap: 10px;
+	}
+
+	.grid__item:last-child {
+		grid-column: auto / auto;
+		grid-row: auto / auto;
+	}
+
+	h1 {
+		font-size: 22px;
+	}
+}
+
+/* ABOUT ME PAGE */
+
+.about-me__item {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.cv_button {
+	text-align: center;
+	margin: 50px;
+}
+
+.about-me_svg {
+	width: 100%;
+}
+
+/* ---- ABOUT ME PAGE - ANIMATION ---- */
+
+@keyframes color-change {
+	0% {
+		fill: #edc655;
+	}
+	50% {
+		fill: #fcffad;
+	}
+	100% {
+		fill: #f76414;
+	}
+}
+
+.sun {
+	animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+	from {
+		transform: translate(0px, 50px);
+	}
+	to {
+		transform: translate(200px, 50px);
+	}
+}
+
+.cloud-front {
+	animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+	from {
+		transform: translate(446px, 48px);
+	}
+	to {
+		transform: translate(100px, 48px);
+	}
+}
+
+.cloud-back {
+	animation: 38s cloud-move-reverse infinite alternate linear;
 }

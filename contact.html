@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Kyla Quilos</title>
-    <link rel="shortcut icon" href="img/kq-favicon.png">
+    <link rel="shortcut icon" href="kq-favicon.png">
     
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
@@ -16,12 +16,13 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /> 
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 </head>
 
 <body>
     <header class="page-header">
-        <!-- Add logo here -->
-        <img src="http://via.placeholder.com/200x70" alt="Kyla Quilos logo" class="page-header__item">
+        <a href="index.html"><img src="img/logo.png" alt="Kyla Quilos logo" class="page-header__item" width="200"></a>
         
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
@@ -62,15 +63,20 @@
             <br>
 
             <form action="https://formspree.io/f/xzbyddal" method="post" id="contact-form" class="contact-page__item">
-                <label class="standard-label" for="contact-email">E-mail:</label>
-                <input type="email" id="contact-email" name="contact-email" placeholder="example@email.com" required><br>
+                <div class="contact-form-item">
+                    <label class="standard-label" for="contact-email">E-mail:</label>
+                    <input type="email" id="contact-email" name="contact-email" placeholder="example@email.com" style="margin-left: 40px" required><br>
+                </div>
                 <br>
-                <label for="contact-telephone" class="standard-label">Telephone:</label>
-                <input type="tel" id="contact-telephone" name="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="555-555-5555" required><br>
+                <div class="contact-form-item">
+                    <label for="contact-telephone" class="standard-label">Telephone:</label>
+                    <input type="tel" id="contact-telephone" name="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="555-555-5555" style="margin-left: 10px" required><br>
+                </div>
                 <br>
-                <label class="standard-label" for="message">Message:</label><br>
-                <textarea maxlength="240" id="message" name="message" required></textarea>
-                <br>
+                <div class="contact-form-item">
+                    <label class="standard-label" for="message">Message:</label>
+                    <textarea maxlength="240" id="message" name="message" required></textarea>
+                </div>
                 <br>
                 <button>Send Message</button>
             </form>
