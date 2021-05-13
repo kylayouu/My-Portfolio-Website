@@ -192,6 +192,7 @@ tbody {
 
 .contact-page {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0 auto;
 	padding: 25px;
 	width: 700px;
@@ -199,7 +200,7 @@ tbody {
 
 .contact-page__item {
 	margin: 0 auto;
-	flex: 0 1 300px;
+	flex: 50%
 }
 
 .contact-info-item {
@@ -215,6 +216,10 @@ textarea {
 	margin-top: 8px;
 	margin-left: 20px;
 	width: 188px;
+}
+
+Address {
+	flex: 50%;
 }
 
 /* ------- */
@@ -258,6 +263,21 @@ textarea {
 
 	h1 {
 		font-size: 22px;
+	}
+
+	.contact-page__item, Address {
+		flex: 100%;
+		margin: 20px;
+		text-align: justify;
+	}
+
+	.profile {
+		margin: 0 auto;
+		text-align: justify;
+	}
+
+	.profile__portrait {
+		margin: 20px;
 	}
 }
 
