@@ -330,20 +330,10 @@ Address {
 
 /* ---- ABOUT ME PAGE - ANIMATION ---- */
 
-@keyframes color-change {
-	0% {
-		fill: #edc655;
-	}
-	50% {
-		fill: #fcffad;
-	}
-	100% {
-		fill: #f76414;
-	}
-}
 
-.sun {
-	animation: 4s color-change infinite alternate linear;
+svg {
+	width: 100%;
+	padding: 50px;
 }
 
 @keyframes cloud-move {
@@ -355,19 +345,45 @@ Address {
 	}
 }
 
-.cloud-front {
-	animation: 30s cloud-move infinite alternate linear;
+.black-cloud {
+	animation: 22s cloud-move infinite alternate linear;
 }
 
-@keyframes cloud-move-reverse {
+@keyframes second-cloud-move {
 	from {
-		transform: translate(446px, 48px);
+		transform: translate(0px, 30px);
 	}
 	to {
-		transform: translate(100px, 48px);
+		transform: translate(300px, 30px);
 	}
 }
 
 .cloud-back {
-	animation: 38s cloud-move-reverse infinite alternate linear;
+	animation: 18s second-cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+	from {
+		transform: translate(250px, 48px);
+	}
+	to {
+		transform: translate(0px, 48px);
+	}
+}
+
+.cloud-front {
+	animation: 25s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes second-cloud-move-reverse {
+	from {
+		transform: translate(0px, 5px);
+	}
+	to {
+		transform: translate(-200px, 5px);
+	}
+}
+
+.second-cloud-front {
+	animation: 30s second-cloud-move-reverse infinite alternate linear;
 }
