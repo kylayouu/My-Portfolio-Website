@@ -85,6 +85,7 @@ header {
 	margin-left: 15px;
 }
 
+
 /* ----- */
 
 /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
@@ -298,6 +299,17 @@ Address {
 		flex-direction: column;
 		text-align: center;
 	}
+
+	.page-header {
+		flex-direction: column;
+		align-items: center;
+		height: 160px;
+	}
+
+	ul {
+		padding: 0px;
+	}
+
 }
 
 /* ----- */
