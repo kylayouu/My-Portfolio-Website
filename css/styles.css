@@ -5,11 +5,12 @@
 	--primary-color: #0e6097;
 	--secondary-color: #329cff;
 	--dark-grey: rgba(0, 0, 0, 0.2);
+	--main-text-color: #353535;
 }
 
 body {
 	background-color: #fff7e8;
-	color: #353535;
+	color: var(--main-text-color);
 	font-family: 'Roboto', 'Lato', sans-serif;
 	font-weight: 100;
 	font-size: 16px;
@@ -22,8 +23,8 @@ body {
 h1 {
 	font-size: 30px;
 	font-weight: 300;
-	text-align: center;
 	margin: 20px;
+	color: var(--main-text-color);
 }
 
 a {
@@ -90,6 +91,7 @@ header {
 
 button, .button {
 	border: none;
+	display: inline-block;
 	font-family: inherit;
 	/* takes the front from the outer container */
 	font-size: 14px;
@@ -149,7 +151,7 @@ tbody {
 .fa-linkedin {
 	color: #0077b5;
 	font-size: 30px;
-	
+
 }
 
 .fa-twitter-square {
@@ -190,6 +192,10 @@ tbody {
 
 /* CONTACT PAGE */
 
+.main-contact-page {
+	text-align: center;
+}
+
 .contact-page {
 	display: flex;
 	flex-wrap: wrap;
@@ -215,7 +221,7 @@ input, label {
 textarea {
 	margin-top: 8px;
 	margin-left: 20px;
-	width: 188px;
+	width: 200px;
 }
 
 Address {
@@ -239,13 +245,29 @@ Address {
 	border: 1px solid var(--dark-grey);
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 496px) {
 	.grid {
 		grid-template-columns: 1fr;
 	}
+
+	h1 {
+		text-align: center;
+	}
+
+	.profile__portrait {
+		float: none;
+		max-width: 250px;
+		margin: 0 auto;
+	}
+
+	.profile {
+		text-align: center;
+		min-width: 388px;
+	}
+
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 496px) and (max-width: 750px) {
 	.grid {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -262,28 +284,29 @@ Address {
 	}
 
 	h1 {
-		font-size: 22px;
+		font-size: 26px;
 	}
 
-	.contact-page__item, Address {
-		flex: 100%;
-		margin: 20px;
-		text-align: justify;
+	.contact-form-item {
+		flex-direction: column;
+		flex-wrap: wrap;
 	}
 
-	.profile {
-		margin: 0 auto;
-		text-align: justify;
-	}
-
-	.profile__portrait {
-		margin: 20px;
+	.contact-page {
+		min-width: 394px;
+		width: auto;
+		flex-direction: column;
+		text-align: center;
 	}
 }
 
 /* ----- */
 
 /* ABOUT ME PAGE */
+
+.main-about-me {
+	text-align: center;
+}
 
 .about-me__item {
 	text-align: center;
