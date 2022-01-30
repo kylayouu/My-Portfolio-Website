@@ -3,9 +3,9 @@
 /* Need to use var(--primary-color) */
 
 body {
-	background-color: #fff7e8;
+	background-color: #fff7e8 !important;
 	color: #353535;
-	font-family: 'Roboto', 'Lato', sans-serif;
+	font-family: 'Roboto', 'Lato', sans-serif !important;
 	font-weight: 100;
 	font-size: 16px;
 	line-height: 1.2;
@@ -261,6 +261,15 @@ Address {
 /* ------- */
 
 /* --- WORK PAGE --- */
+
+.work-screenshots {
+	padding: 2em;
+}
+
+#work-page-title > h1 {
+	font-size: 30px;
+	padding: 1em;
+}
 
 .grid {
 	display: grid;
