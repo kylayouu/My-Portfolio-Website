@@ -169,6 +169,11 @@ tbody {
 	font-size: 30px;
 }
 
+.fa-medium {
+	color: #3b3b3b;
+	font-size: 30px;
+}
+
 .fa-linkedin:hover {
 	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
@@ -190,6 +195,14 @@ tbody {
 }
 
 .fa-github:focus {
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.fa-medium:hover {
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.fa-medium:focus {
 	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
