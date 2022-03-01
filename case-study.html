@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>showFlix with React Case Study</title>
+
+	<link rel="shortcut icon" href="kq-favicon.png">
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<header class="page-header">
+    <a href="index.html"><img src="img/logo.png" alt="Kyla Quilos logo" class="page-header__item" width="200"></a>
+
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+	
+	<main class="container">
+		<h1 class="case-study-title">showFlix with React - Case Study</h1>
+		<div class="row main-row">
+			<div class="row first-row">
+				<div class="col-sm-12 col-md-10 col-lg-6">
+					<img src="img/showFlix-banner.png" alt="showFlix banner" class="img-fluid cs-images">
+				</div>
+
+				<div class="col-sm-12 col-md-10 col-lg-6">
+					<h2>Overview</h2>
+					<p>
+						showFlix is a web application that targets users who love and are interested in learning about movies. Users are able to create an account, update their personal information, as well as explore a list of movies, directors, and genres. They can also personalize their account by building their own favorite movies list.
+					</p>
+
+					<h2>Purpose</h2>
+					<p>
+						showFlix is a web application that targets users who love and are interested in learning about movies. Users are able to create an account, update their personal information, as well as explore a list of movies, directors, and genres. They can also personalize their account by building their own favorite movies list.
+					</p>
+				</div>
+			</div>
+
+			<div class="row second-row">
+				<div class="col-sm-12 col-md-10 col-lg-6">
+					<h2>Objective</h2>
+					<p>
+						Creating my showFlix app allowed me to practice both the client and server sides of web development using JavaScript technologies. This project will be displayed on my portfolio as a complete web application built using the MERN (MongoDB, Express, React, Node.js) tech stack. My full-stack application will be useful for movie enthusiasts who want access to information about different types of movies.
+					</p>
+					<h2>Creating the client-side</h2>
+					<p>
+						The front-end portion was my favorite part since I was able to design what the users can see and interact with. For this part, I learned how to use the React library(including React Redux) to create a single-page application that is able to display multiple views such as the login view, registration view, profile view that includes the user’s favorite movies list, list of movies, data of a selected movie, genre view, and director view (see below for a few examples). Furthermore, I used React Bootstrap to provide a responsive design for my web application.
+					</p>
+				</div>
+
+				<div class="col-sm-12 col-md-10 col-lg-6 m-auto">
+					<img src="img/showflix-react-home.png" alt="showflix react homepage" class="img-fluid cs-images">
+				</div>
+			</div>
+
+			<div class="row third-row">
+				<div class="col-5 m-auto">
+					<img src="img/postman.png" alt="postman" class="img-fluid cs-images">
+				</div>
+
+				<div class="col-6">
+					<h2>Creating the server-side</h2>
+					<p>
+						This was the first complete application that I had ever worked on, meaning I had to build the back-end myself. For the back-end portion, I created a REST API using Express and Node.js which interacts with a database using MongoDB that stores the data for all the movies. To test all my API endpoints, I used Postman API to make sure everything was functioning properly, meaning all HTTP requests were fulfilled and can successfully perform all CRUD (Create, Read, Update, Delete) operations (see image on the left).
+					</p>
+				</div>
+			</div>
+
+			<div class="row fourth-row">
+				<div class="page-examples col-5">
+					<h5>Login View</h5>
+					<img src="img/showflix-react-login.png" alt="login view" class="img-fluid cs-images">
+				</div>
+				<div class="page-examples col-5">
+					<h5>Single Movie View</h5>
+					<img src="img/showflix-react-single-movie-view.png" alt="single movie view" class="img-fluid cs-images">
+				</div>
+			</div>
+
+			<div class="row fifth-row">
+				<div class="page-examples col-8">
+					<h5>Profile View</h5>
+					<img src="img/showflix-react-profile.png" alt="profile view" class="img-fluid cs-images">
+				</div>
+			</div>
+			
+			<div class="row sixth-row">
+				<h2>Duration</h2>
+				<p>
+					My showFlix app took about 2.5 months to complete, which was the longest I have spent on finishing a project for the program.
+				</p>
+				<h2>Challenges</h2>
+				<p>
+					Out of all the projects I have worked on, this has been the most fulfilling yet. Those 2.5 months that I spent working on this web application were filled with excitement because I knew I was gaining experience with the top technologies used in the world today. They were also filled with frustration and exhaustion from getting various errors that I truly struggled to find solutions for. I looked to my mentor, tutor, and at resources such as Stack Overflow to help me. Because I built this web application from the ground up, I knew I caused every error that I encountered along the way, but it allowed me to explore multiple situations that I can potentially run into working in the industry. I definitely see this as a big win. I also had a hard time learning React Redux, but this was a great project to expose myself to this useful tool. Overall, I believe that I learned the most from building my showFlix app, and I am very grateful!
+				</p>
+				<h2>Credits</h2>
+				<p>
+					Lead Developer: Kyla Quilos <br>
+					Tutor: Andrew Muscara <br>
+					Mentor: John Akhilomen
+				</p>
+			</div>
+
+		</div>
+	</main>
+
+	<footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a href="https://github.com/kylayouu" aria-label="Github Link" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/kylayouu_" aria-label="Twitter Link" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://linkedin.com/in/kyla-quilos" aria-label="LinkedIn Link" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://medium.com/@quilos.kyla" aria-label="Medium Link" target="_blank"><i class="fab fa-medium"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/tota11y.min.js"></script>
+</body>
+</html>
